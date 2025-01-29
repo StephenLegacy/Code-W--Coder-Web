@@ -25,9 +25,11 @@
 
 .top-bar{
     background-color: rgb(74, 73, 73);
-    color: white;
     align-items: center;
-    height: 50px;
+    color: white;
+    font-size: 16px;
+    align-items: center;
+    height: 38px;
     padding-left: 14px;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -47,7 +49,8 @@
     top: 6px;
     bottom: 6px;
     right: 0;
-    padding: 10px;
+    padding-top: 6px;
+    padding-bottom: 6px;
     padding-right: 18px;
     margin-right: 18px;
   }
@@ -135,6 +138,72 @@
 
 }
 
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.detail-box {
+    width: 45%; /* Adjust width for responsiveness */
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 3px 0;
+}
+
+@media (max-width: 600px) {
+    .details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-box {
+        width: 100%;
+    }
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Adjust spacing between icons */
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+.social-icons img {
+    width: 24px; /* Adjust icon size */
+    height: 24px;
+    filter: grayscale(100%); /* Makes the icons black and white */
+    transition: filter 0.3s ease-in-out;
+}
+
+.social-icons a:hover img {
+    filter: grayscale(0%); /* Restores color on hover */
+}
+
+
 .paci-text{
     font-size: 54px;
     margin-top: 10px;
@@ -167,50 +236,108 @@
     cursor: pointer;
 }
 
-/* Footer */
-footer {
-    background: black;
+/* Footer Styling */
+.footer {
+    background: #151515;
     color: white;
-    padding: 30px;
-    text-align: center;
-    border-radius: 16px;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    margin-left: 14px;
-    margin-right: 14px;
-}
-
-.map{
-    margin-top: 14px;
-    margin-bottom: 14px;
-    margin-left: 14px;
-    margin-right: 14px;
-    align-items: center;
-    align-self: center;
+    padding: 40px 60px;
     display: flex;
-    flex: 1;
-
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    position: relative;
+    border-radius: 20px;
 }
-.map-div{
-    border-radius: 16px;
 
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    align-items: flex-start;
 }
+
+.footer-text {
+    text-align: left;
+    max-width: 400px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #3a86ff, #ff006e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .footer-links {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 .footer-links ul {
     list-style: none;
+    padding: 0;
 }
 
-.footer-links a {
+.footer-links ul li {
+    margin-bottom: 6px;
+}
+
+.footer-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    opacity: 0.7;
+    margin-top: 20px;
+}
+
+.footer-bottom a {
     color: white;
     text-decoration: none;
 }
 
-.footer-content {
-    font-size: 20px;
-    
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-text {
+        text-align: center;
+    }
 }
