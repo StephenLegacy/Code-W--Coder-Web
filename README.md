@@ -3,7 +3,7 @@
 **Code-W--Coder-Web** is a web development project designed to showcase modern design, interactive UI, and best coding practices for building dynamic and responsive websites. 🚀  
 
 ## 🌟 **Features**  
-- **Responsive & Mobile-Friendly** – Works seamlessly across all devices.  
+- **Responsive & Mobile-Friendly** – Works seamlessly across all users devices.  
 - **Modern UI/UX** – Clean, interactive, and user-friendly design.  
 - **Optimized Performance** – Fast loading speeds with SEO-friendly structure.  
 - **Reusable Components** – Modular and maintainable code for easy customization.  
